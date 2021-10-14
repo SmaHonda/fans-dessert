@@ -6,14 +6,6 @@
 :root{
     --color1:#1f755a;
 }
-.titletxt1{ 
-    font-size: 1.3rem; 
-    letter-spacing: 0.3rem;
-}
-.titletxt2{ 
-    letter-spacing: 0.8rem;
-    margin: 10px 0px;
-}
 body{
     width: 100%;
     font-family: 'cwTeXYen',cwTeXYen;
@@ -26,12 +18,9 @@ body{
     position: absolute;
     z-index: 2;
     right: 10vw;
-    top: 60px;
-    font-size: 2.3rem;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px 10px;
     writing-mode: vertical-rl;
-    letter-spacing: 1rem;
     color: rgb(122, 84, 2);
 }
 #header img{
@@ -45,11 +34,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
     margin: 30px auto;
     color: var(--color1);
 }
-
+.titletxt1{ 
+    font-size: 1.3rem; 
+    letter-spacing: 0.3rem;
+}
+.titletxt2{ 
+    letter-spacing: 0.8rem;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
 #slide{
     display: flex;
     width: 100vw;
@@ -58,7 +54,6 @@ body{
 
 .slideImg img{
     width: 25vw;
-
 }
 
 .imgLeft{
@@ -129,4 +124,61 @@ body{
 }
 #footer img{
     width: 15vw;
+}
+
+
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #headerTxt{
+        font-size: 24px;
+        letter-spacing: 2px;
+        top: 10px;
+    }
+    .titletxt1{
+         font-size:16px; 
+    letter-spacing: 4px;
+    }
+    .titletxt2{
+         font-size: 24px;
+    letter-spacing: 4px;
+    }
+    .infoTitleL , .infoTitleR , .infoTxt{
+        font-size: 24px;
+    }
+}
+
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+        #headerTxt{
+        font-size: 24px;
+        letter-spacing: 2px;
+        top: 8px;
+    }
+}
+
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+        #headerTxt{
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        top: 40px;
+    }
+}
+
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #headerTxt{
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        top: 40px;
+    }
+}
+
+/* xl - Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #headerTxt{
+        font-size: 2.3rem;
+        letter-spacing: 1rem;
+        top: 60px;
+    }
 }
