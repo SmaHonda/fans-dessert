@@ -10,7 +10,6 @@
 body{
     width: 100%;
     font-family: 'cwTeXYen',cwTeXYen;
-
 }
 #header{
     width: 100vw;
@@ -192,4 +191,7 @@ body{
         letter-spacing: 1rem;
         top: 60px;
     }
+    .infoTxt{
+    font-size: 3rem;
+}
 }
